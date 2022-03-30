@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title></title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,400i,700,700i" rel="stylesheet">
+
+    <link href="css/plugins_and_other/main.css" rel="stylesheet">
+    <link href="css/plugins_and_other/header.css" rel="stylesheet">
+
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body class="page">
+    <svg xmlns="http://www.w3.org/2000/svg"
+      style="border: 0 !important; clip: rect(0 0 0 0) !important; height: 1px !important; margin: -1px !important; overflow: hidden !important; padding: 0 !important; position: absolute !important; width: 1px !important;"
+      class="root-svg-symbols-element">
+        <defs>
+            <path id="a" d="M1496 1330a16 16 0 1 1 0 32 16 16 0 0 1 0-32zm0 2.5a13.5 13.5 0 1 0 0 27 13.5 13.5 0 0 0 0-27zm-5 10l5 5 5-5 2 2-7 7-7-7z"></path>
+        </defs>
+        <symbol id="arrow-down" viewBox="0 0 35 34">
+            <use xlink:href="#a" transform="translate(-1479 -1329)"></use>
+        </symbol>
+        <symbol id="cog" viewBox="0 0 24 24">
+            <g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" fill="none">
+                <path
+                  d="M20.254 13.5H23.5v-3h-3.247c-.209-.867-.551-2.181-1.003-2.922l2.296-2.295-2.829-2.829L16.42 4.75c-.74-.451-2.053-.793-2.92-1.002V.5h-3v3.248c-.867.209-2.181.551-2.921 1.002L5.282 2.454 2.453 5.283 4.75 7.579c-.452.74-.794 2.054-1.004 2.921H.5v3h3.246c.21.867.552 2.182 1.004 2.921l-2.297 2.297 2.829 2.828 2.296-2.298c.741.454 2.055.796 2.922 1.006V23.5h3v-3.246c.867-.21 2.181-.552 2.92-1.004l2.298 2.296 2.828-2.828-2.296-2.297c.452-.739.794-2.054 1.004-2.921z">
+                </path>
+                <circle cx="12" cy="12" r="4.5"></circle>
+            </g>
+        </symbol>
+        <symbol id="script" viewBox="0 0 24 24">
+            <path d="M5.5 17.5v-14a3 3 0 0 1 3-3h12M9 5.5h5.5M9 8.5h5.5m-5.5 3h5.5m-5.5 3h5.5m1 9h-12a3 3 0 1 1 0-6h12a3 3 0 1 0 3 3V3c0-1.381 1.118-2.5 2.5-2.5 1.38 0 2.5 1.119 2.5 3h-5" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+              stroke-miterlimit="10" fill="none"></path>
+        </symbol>
+        <symbol id="target" viewBox="0 0 24 24">
+            <g fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10">
+                <circle cx="9" cy="15" r=".5" stroke-linecap="round"></circle>
+                <circle cx="9" cy="15" r="2.5" stroke-linecap="round"></circle>
+                <circle cx="9" cy="15" r="5.5" stroke-linecap="round"></circle>
+                <circle cx="9" cy="15" r="8.5" stroke-linecap="round"></circle>
+                <path stroke-linecap="round" d="M9 15L21 3m0 0h2.5S21 11 17 7s4-6.5 4-6.5V3z"></path>
+                <path d="M18.5 5.5V1.595"></path>
+                <path stroke-linecap="round" d="M.5 23.5L3 21m12 0l2.5 2.5"></path>
+            </g>
+        </symbol>
+        <symbol id="user" viewBox="0 0 24 24">
+            <g stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" fill="none">
+                <path d="M9.5 14.281V17l-5.009 1.789A3.001 3.001 0 0 0 2.5 21.614V23.5h19v-1.886a3 3 0 0 0-1.991-2.825L14.5 17v-2.906"></path>
+                <ellipse cx="11.875" cy="9" rx="5" ry="6"></ellipse>
+                <path d="M16.828 8.453l-.453.047c-1.703.328-2.797-.289-3.734-1.93-.563 1.078-2.322 1.93-3.766 1.93a4.02 4.02 0 0 1-1.936-.466"></path>
+            </g>
+        </symbol>
+    </svg>
+
+    <div class="page__wrapper mm-page mm-slideout" id="mm-0">
+        <section class="page__content">
+            <div class="side-panel">
+                <span class="border-button red-button tender-button" data-remodal-target="modal-tender">Пригласить на тендер</span>
+                <a class="erp-login-gray" href="http://akme.diamirerp.com">Войти в ERP</a>
+            </div>
+            <div class="header" id="sticker">
+                <div class="row">
+                    <div class="columns large-12 wrapper-header">
+                        <div class="header__city_wrapper">
+                            <div class="wrapper">
+                                <div class="header__cities"></div>
+                            </div>
+                        </div>
+                        <div class="links hide-medium hide-small">
+                            <a href="/services/autsorsing/autsorsing-personala/">Аутсорсинг персонала</a>
+                            <a href="/services/autstaffing/autstaffing-personala-grazhdan-rf/">Аутстаффинг персонала</a>
+                        </div>
+                        <div class="phone-wrapper">
+                            <div class="header__phone header__phone_SPB">8 (800) 555-90-31</div>
+                        </div>
+                        <div class="wrapper-schedule">
+                            <button data-remodal-target="modal">Заказать звонок</button>
+                            <span>пн.- пт. c 10:00 до 19:00</span>
+                        </div>
+                    </div>
+                    <a class="header__mobile-mm menu-button" href="#menu">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="menu hide-medium hide-small ">
+                <div class="row align-center">
+                    <div class="columns large-12 wrapper-header-menu">
+                        <div class="wrapper-logo">
+                            <a href="/">
+                                <img src="https://business.akmeservices.ru/local/templates/akme-business/static/img/logo-white.png">
+                            </a>
+                            <div class="slogan">
+                                Профессиональный<br>аутсорсинг<br>персонала
+                            </div>
+                        </div>
+                        <ul class="menu-ul">
+                            <li>
+                                <a href="/about/">О компании</a>
+                                <div class="childs">
+                                    <a href="/about/history/">История</a>
+                                    <a href="/about/rewards/">Награды</a>
+                                    <a href="/about/mission/">Миссия и ценности</a>
+                                    <a href="/about/victory/">Наши победы</a>
+                                    <a href="/about/help/">Благотворительность и спонсорская помощь</a>
+                                    <a href="/partners/">Партнеры</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/services/">Услуги</a>
+                                <div class="childs">
+                                    <a href="/services/autsorsing/autsorsing-personala/">Аутсорсинг персонала</a>
+                                    <a href="/services/autstaffing/autstaffing-personala-grazhdan-rf/">Аутстаффинг персонала</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/case/">Опыт клиентов</a>
+                                <div class="childs">
+                                    <a href="/case/?case=video">Видео отзывы</a>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="/faq/">Вопрос-Ответ</a>
+                            </li>
+                            <li>
+                                <a href="https://youtu.be/mquliWvMQxk" data-fancybox="" class="menu-video">Итоги 2021</a>
+                            </li>
+                            <li>
+                                <a href="/contacts/">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="/News/">Новости</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sh">
+                <div class="row">
+                    <div class="sh__intro">
+                        <div class="sh__intro-logo"><img src="images/logo.png" alt=""></div>
+                        <h1>Коммерческое<br> предложение</h1>
+                    </div>
+                </div>
+
+                <div class="sh__features">
+                    <div class="row">
+                        <div class="sh__features-bubble">
+                            <h2>Наши преимущества:</h2>
+                            <div class="sh__feature">
+                                <div class="sh__feature-img"><img src="images/icon_1.jpg" alt=""></div>
+                                <p>Предоставление персонала<br> на следующий день</p>
+                            </div>
+                            <div class="sh__feature">
+                                <div class="sh__feature-img"><img src="images/icon_2.jpg" alt=""></div>
+                                <p>Соблюдение графика вывода<br> персонала на 100%</p>
+                            </div>
+                            <div class="sh__feature">
+                                <div class="sh__feature-img"><img src="images/icon_3.jpg" alt=""></div>
+                                <p>Собственный обучающий центр<br> и отдел контроля качества</p>
+                            </div>
+                            <div class="sh__feature">
+                                <div class="sh__feature-img"><img src="images/icon_4.jpg" alt=""></div>
+                                <p>Собственная ERP система</p>
+                            </div>
+                            <h3>Наши партнёры:</h3>
+                            <div class="sh__features-partners">
+                                <div class="sh__features-partner"><img src="images/partner_1.png" alt=""></div>
+                                <div class="sh__features-partner"><img src="images/partner_2.png" alt=""></div>
+                                <div class="sh__features-partner"><img src="images/partner_3.png" alt=""></div>
+                                <div class="sh__features-partner"><img src="images/partner_4.png" alt=""></div>
+                                <div class="sh__features-partner"><img src="images/partner_5.png" alt=""></div>
+                                <div class="sh__features-partner"><img src="images/partner_6.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sh__get sh__get--diagram">
+                    <div class="row">
+                        <h2>Что <span>вы</span> получаете?</h2>
+                        <div class="tiles">
+                            <div class="tiles__column">
+                                <div class="tile">
+                                    <div class="fk-1">
+                                        <h3>Минимизация рисков</h3>
+                                        <ul>
+                                            <li>Материальная ответственность за нанесение ущерба</li>
+                                            <li>Проведение инструктажей по ОТ и ТБ</li>
+                                            <li>Уплата взносов в ПФР, ФСС и ФОМС</li>
+                                            <li>Уплата 100% НДС</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tiles-2">
+                                    <div class="tiles-2__column">
+                                        <div class="tile">
+                                            <div class="fk-2">
+                                                <div class="fk-2__image"><img src="images/icon_5.jpg" alt=""></div>
+                                                <p>Отсутствие затрат на<br> администрирование<br> и кадровое сопровождение</p>
+                                            </div>
+                                        </div>
+                                        <div class="tile">
+                                            <div class="fk-2">
+                                                <div class="fk-2__image"><img src="images/icon_6.jpg" alt=""></div>
+                                                <p>Система кешбеков<br> для постоянных клиентов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tiles-2__column">
+                                        <div class="tile">
+                                            <div class="fk-3">
+                                                <p>Комиссия АКМЭ<br> из общих затрат<br> на сотрудника</p>
+                                                <img src="images/icon_7.jpg" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tiles-3">
+                                    <div class="tiles-3__column">
+                                        <div class="tile">
+                                            <div class="fk-4">
+                                                <h4><span>2</span> часа</h4>
+                                                <p>на замену<br> сотрудника</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tiles-3__column">
+                                        <div class="tile">
+                                            <div class="fk-5">
+                                                <div class="fk-5__image"><img src="images/icon_8.jpg" alt=""></div>
+                                                <p>Быстрый манёвр<br> количеством персонала</p>
+                                            </div>
+                                        </div>
+                                        <div class="tile">
+                                            <div class="fk-5">
+                                                <div class="fk-5__image"><img src="images/icon_9.jpg" alt=""></div>
+                                                <p>Персональный<br> менеджер 24/7</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="desktop-diagram">
+                                    <h3>Диаграмма по<br> расчету:</h3>
+                                    <div class="desktop-diagram__diagram">
+                                        <div id="js-diagram" class="diagram"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tiles__column">
+                                <div class="tile">
+                                    <div class="fk-6">
+                                        <h3>Стоимость услуг:</h3>
+                                        <p>1 777 777 777 <span>₽</span></p>
+                                    </div>
+                                </div>
+                                <div class="tile">
+                                    <div class="fk-7">
+                                        <h3>Расчет стоимости:</h3>
+                                        <table>
+                                            <tr>
+                                                <th>Категория</th>
+                                                <th>Гражданство</th>
+                                                <th>Работников<br> в смену</th>
+                                                <th>График</th>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="mobile-diagram">
+                                    <h3>Диаграмма по<br> расчету:</h3>
+                                    <div class="mobile-diagram__diagram">
+                                        <div id="js-diagram2" class="diagram"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="page__footer">
+            <footer class="footer">
+                <div class="footer__top">
+                    <div class="row footer_row">
+                        <div class="column large-2 medium-4 small-6">
+                            <div class="footer-menu__cont">
+                                <div class="footer-menu__title">О компании</div>
+                                <ul class="footer-menu">
+                                    <li><a href="/about/#about">О нас</a></li>
+                                    <li><a href="/about/history/">История</a></li>
+                                    <li><a href="/about/rewards/">Награды</a></li>
+                                    <li><a href="/about/mission">Миссия и ценности</a></li>
+                                    <li><a href="/vacancies/profits">Преимущества</a></li>
+                                    <li><a href="/ourwins/">Наши победы</a></li>
+                                    <li><a href="/about/help/">Благотворительность</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column large-2 medium-4 small-6">
+                            <div class="footer-menu__cont">
+                                <div class="footer-menu__title">Предоставление персонала</div>
+                                <ul class="footer-menu">
+                                    <li><a href="/services/autsorsing/autsorsing-personala/">Аутсорсинг персонала</a></li>
+                                    <li><a href="/services/autsorsing/autsorsing-biznes-protsessov/">Аутсорсинг бизнес-процессов</a></li>
+                                    <li><a href="/services/autsorsing/barkhatnyy-rekruting/">Бархатный рекрутинг</a></li>
+                                    <li><a href="/services/autstaffing/autstaffing-personala-inostrannykh-grazhdan/">Аутстаффинг персонала иностранных граждан</a></li>
+                                    <li><a href="/services/autstaffing/autstaffing-personala-grazhdan-rf/">Аутстаффинг персонала граждан РФ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column large-2 medium-4 small-6">
+                            <div class="footer-menu__cont">
+                                <div class="footer-menu__title">Подбор персонала</div>
+                                <ul class="footer-menu">
+                                    <li><a href="/services/podbor-personala/eksklyuzivnyy-podbor/">Эксклюзивный подбор</a></li>
+                                    <li><a href="/services/podbor-personala/traditsionnyy-rekruting-/">Традиционный рекрутинг</a></li>
+                                    <li><a href="/services/podbor-personala/massovyy-podbor-/">Массовый подбор</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column large-2 medium-4 small-6">
+                            <div class="footer-menu__cont">
+                                <div class="footer-menu__title">Информация</div>
+                                <ul class="footer-menu">
+                                    <li><a href="/policy/">Согласие на обработку персональных данных</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="column large-2 medium-4 small-6">
+                            <div class="footer-menu__cont">
+                                <div class="footer-menu__title">Обратная связь</div>
+                                <div class="footer-menu__links">
+                                    <p class="phone"><a href="tel:+ 7(812) 603-43-33">+7(812) 603-43-33</a></p>
+                                    <p class="phone"><a href="tel:+ 7(800) 555-90-35">+7(800) 555-90-35</a></p>
+                                    <p class="phone"><a href="mailto:info@akmeservices.ru">info@akmeservices.ru</a></p>
+                                </div>
+                                <button class="border-button footer-menu__button" data-remodal-target="modal">Обратный звонок</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column large-12">
+                        <div class="footer__bottom">
+                            <div class="footer__info">© 2003-2020 Группа кадровых компаний "АКМЭ"</div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+    <!-- Chart code -->
+    <script>
+        am5.ready(function() {
+
+            // Create root element
+            // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+            var root = am5.Root.new("js-diagram");
+
+            var root2 = am5.Root.new("js-diagram2");
+
+            // Set themes
+            // https://www.amcharts.com/docs/v5/concepts/themes/
+            root.setThemes([
+                am5themes_Animated.new(root)
+            ]);
+
+            root2.setThemes([
+                am5themes_Animated.new(root)
+            ]);
+
+            // Create chart
+            // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+            var chart = root.container.children.push(
+                am5percent.PieChart.new(root, {
+                    endAngle: 270
+                })
+            );
+
+            var chart2 = root2.container.children.push(
+                am5percent.PieChart.new(root2, {
+                    endAngle: 270
+                })
+            );
+
+            // Create series
+            // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+            var series = chart.series.push(
+                am5percent.PieSeries.new(root, {
+                    valueField: "value",
+                    categoryField: "category",
+                    endAngle: 270
+                })
+            );
+
+            var series2 = chart2.series.push(
+                am5percent.PieSeries.new(root2, {
+                    valueField: "value",
+                    categoryField: "category",
+                    endAngle: 270
+                })
+            );
+
+            series.states.create("hidden", {
+                endAngle: -90
+            });
+
+            series2.states.create("hidden", {
+                endAngle: -90
+            });
+
+            // Set data
+            // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+            series.data.setAll([{
+                category: "Lithuania",
+                value: 501.9
+            }, {
+                category: "Czechia",
+                value: 301.9
+            }, {
+                category: "Ireland",
+                value: 201.1
+            }, {
+                category: "Germany",
+                value: 165.8
+            }, {
+                category: "Australia",
+                value: 139.9
+            }, {
+                category: "Austria",
+                value: 128.3
+            }, {
+                category: "UK",
+                value: 99
+            }]);
+
+            series2.data.setAll([{
+                category: "Lithuania",
+                value: 501.9
+            }, {
+                category: "Czechia",
+                value: 301.9
+            }, {
+                category: "Ireland",
+                value: 201.1
+            }, {
+                category: "Germany",
+                value: 165.8
+            }, {
+                category: "Australia",
+                value: 139.9
+            }, {
+                category: "Austria",
+                value: 128.3
+            }, {
+                category: "UK",
+                value: 99
+            }]);
+
+            series.appear(1000, 100);
+
+            series2.appear(1000, 100);
+
+        }); // end am5.ready()
+    </script>
+
+</body>
+
+</html>
