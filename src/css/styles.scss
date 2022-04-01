@@ -703,15 +703,13 @@
             font-size: 12px;
         }
 
-        th {
-            font-weight: 700;
-        }
-
         td,
         th {
             border: 1px solid #afafaf;
-            height: 30px;
+            font-weight: 700;
+            height: 40px;
             padding: 3px;
+            text-align: center;
 
             &:first-child {
                 border-left: none;
@@ -724,6 +722,10 @@
 
         th {
             border-top: none;
+        }
+
+        td {
+            font-size: 0.9em;
         }
 
         tr {
@@ -763,17 +765,18 @@
     }
 
     &__diagram {
-        max-width: 300px;
+        height: 300px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .diagram {
-        height: 0;
+        height: 300px;
+        /*height: 0;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 100%;
-        width: 100%;
+        width: 100%;*/
     }
 }
 

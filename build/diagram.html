@@ -274,64 +274,45 @@
                                                 <th>График</th>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td>Грузчик</td>
+                                                <td>РФ</td>
+                                                <td>10</td>
+                                                <td>11 часов<br> 6/1</td>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td colspan="4">26 смен в месяц, 11 часов в смену</td>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td colspan="3">Стоимость, руб/час (без НДС)</td>
+                                                <td>232</td>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td colspan="3">Совокупный доход сотрудника</td>
+                                                <td>135</td>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td colspan="3">Налоги и взносы (ПФР, ФСС, НДФЛ)</td>
+                                                <td>22,66</td>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td colspan="3">Накладные расходы (5%)</td>
+                                                <td>11,6</td>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td colspan="3">Расходы на выдачу премиальной части (13%)</td>
+                                                <td>13,35</td>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td colspan="3">Проживание</td>
+                                                <td>20,98</td>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td colspan="3">Административные расходы</td>
+                                                <td>13,99</td>
                                             </tr>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
+                                                <td colspan="3">Гонорар АКМЭ</td>
+                                                <td>14,42</td>
                                             </tr>
                                         </table>
                                     </div>
@@ -467,7 +448,7 @@
                 am5percent.PieSeries.new(root, {
                     valueField: "value",
                     categoryField: "category",
-                    endAngle: 270
+                    //endAngle: 270
                 })
             );
 
@@ -475,16 +456,16 @@
                 am5percent.PieSeries.new(root2, {
                     valueField: "value",
                     categoryField: "category",
-                    endAngle: 270
+                    //endAngle: 270
                 })
             );
 
             series.states.create("hidden", {
-                endAngle: -90
+                //endAngle: -90
             });
 
             series2.states.create("hidden", {
-                endAngle: -90
+                //endAngle: -90
             });
 
             // Set data
