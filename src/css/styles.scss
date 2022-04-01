@@ -801,16 +801,18 @@
     }
 
     &__diagram {
-        max-width: 300px;
+        height: 300px;
+        //max-width: 300px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .diagram {
-        height: 0;
+        height: 300px;
+        /*height: 0;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 100%;
-        width: 100%;
+        width: 100%;*/
     }
 }
